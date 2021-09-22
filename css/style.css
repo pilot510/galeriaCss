@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  margin: 1em;
+}
+body .galeriaImagenes {
+  -moz-columns: 3 300px;
+       columns: 3 300px;
+}
+body .galeriaImagenes img {
+  max-width: 100%;
+  margin-bottom: 10px;
+  border: solid 2px #867e7e;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px #f5f1f13f;
+}/*# sourceMappingURL=style.css.map */
