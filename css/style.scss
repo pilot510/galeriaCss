@@ -8,13 +8,19 @@ body {
     background-color: #000000;
     margin: 1em;
 
+    h1 {
+        color: #ba2285;
+        text-align: center;
+    }
+
     .galeriaImagenes {
         columns: 3 300px;
+        margin:0.5rem 1rem;
 
         img {
             max-width: 100%;
             margin-bottom: 10px;
-            border: solid 2px #867e7e ;
+            border: solid 2px #867e7e;
             border-radius: 10px;
             box-shadow: 0 0 5px 5px #f5f1f13f;
         }

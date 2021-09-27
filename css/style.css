@@ -8,9 +8,14 @@ body {
   background-color: #000000;
   margin: 1em;
 }
+body h1 {
+  color: #ba2285;
+  text-align: center;
+}
 body .galeriaImagenes {
   -moz-columns: 3 300px;
        columns: 3 300px;
+  margin: 0.5rem 1rem;
 }
 body .galeriaImagenes img {
   max-width: 100%;
