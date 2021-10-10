@@ -1,7 +1,12 @@
+@font-face {
+  font-family: blackRaven;
+  src: url(./../assets/fonts/black-ravens/BlackRavens.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
@@ -9,8 +14,10 @@ body {
   margin: 1em;
 }
 body h1 {
+  font-family: blackRaven;
   color: #ba2285;
   text-align: center;
+  font-size: 5rem;
 }
 body .galeriaImagenes {
   -moz-columns: 3 300px;
