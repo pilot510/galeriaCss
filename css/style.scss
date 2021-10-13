@@ -7,10 +7,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+html {
     font-size: 62.5%;
 }
 
 body {
+    font-size: 16px;
     background-color: #000000;
     margin: 1em;
 
@@ -23,7 +28,7 @@ body {
 
     .galeriaImagenes {
         columns: 3 300px;
-        margin:0.5rem 1rem;
+        margin: 0.5rem 1rem;
 
         img {
             max-width: 100%;
