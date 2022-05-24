@@ -16,7 +16,6 @@ html {
 html body {
   font-size: 1.6rem;
   background-color: #000000;
-  margin: 1em;
 }
 html body header {
   text-align: end;
@@ -26,6 +25,7 @@ html body header #iconoInicio {
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 2em;
 }
 html body header #iconoInicio i {
   font-size: 2em;
