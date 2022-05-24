@@ -17,17 +17,33 @@ html {
 
     body {
         font-size: 1.6rem;
-        background-color: #000000;
+        background-image: url(https://images.unsplash.com/photo-1516035069371-29a1b244cc32?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764);
+        background-repeat: initial;
+
+        transition: ease all .3s;
 
         header {
-            text-align: end;
+            .modoClaroBoton {
+                float: left;
+                margin: 1rem 2rem;
+                padding: .5rem 1rem;
+                cursor: pointer;
+                color: #ffffff;
+                background-color: #383838;
+                border: solid 1px #666565;
+                border-radius: 5px;
+                text-transform: capitalize;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
 
             #iconoInicio {
+                text-align: end;
                 color: #8d74d3;
                 text-transform: uppercase;
                 font-weight: bold;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                margin: 2em;
+                margin: 1em;
 
                 i {
                     font-size: 2em;
@@ -36,10 +52,14 @@ html {
             }
         }
 
+        &.Claro {
+            background-image: url(https://images.unsplash.com/photo-1516852294404-5423eaa0d4a9?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687);
+            background-repeat: initial;
+        }
+
         &.bodyIndex {
 
-            background-image: url(https://images.unsplash.com/photo-1516035069371-29a1b244cc32?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764);
-            background-repeat: initial;
+
 
             .cajasMenu {
                 display: grid;
@@ -91,6 +111,7 @@ html {
                 box-shadow: 0 0 5px 5px #f5f1f13f;
             }
         }
+
         // footer {
         //     position: static;
         //     bottom: 0;

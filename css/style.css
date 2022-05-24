@@ -15,24 +15,37 @@ html {
 }
 html body {
   font-size: 1.6rem;
-  background-color: #000000;
+  background-image: url(https://images.unsplash.com/photo-1516035069371-29a1b244cc32?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764);
+  background-repeat: initial;
+  transition: ease all 0.3s;
 }
-html body header {
-  text-align: end;
+html body header .modoClaroBoton {
+  float: left;
+  margin: 1rem 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #383838;
+  border: solid 1px #666565;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 html body header #iconoInicio {
+  text-align: end;
   color: #8d74d3;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin: 2em;
+  margin: 1em;
 }
 html body header #iconoInicio i {
   font-size: 2em;
   margin-right: 1%;
 }
-html body.bodyIndex {
-  background-image: url(https://images.unsplash.com/photo-1516035069371-29a1b244cc32?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764);
+html body.Claro {
+  background-image: url(https://images.unsplash.com/photo-1516852294404-5423eaa0d4a9?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687);
   background-repeat: initial;
 }
 html body.bodyIndex .cajasMenu {
