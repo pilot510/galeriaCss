@@ -17,7 +17,46 @@ html body {
   font-size: 1.6rem;
   background-image: url(https://images.unsplash.com/photo-1516035069371-29a1b244cc32?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764);
   background-repeat: initial;
+  position: relative;
+  min-height: 100vh;
   transition: ease all 0.3s;
+}
+html body.Claro {
+  background-image: url(https://images.unsplash.com/photo-1516852294404-5423eaa0d4a9?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687);
+  background-repeat: initial;
+}
+html body.bodyIndex {
+  position: relative;
+  min-height: 100vh;
+}
+html body.bodyIndex .cajasMenu {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 20px 0 50px 1rem;
+  gap: 1rem;
+  grid-auto-rows: 200px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-flow: dense;
+}
+html body.bodyIndex .cajasMenu .caja {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border: #8d74d3 solid 5px;
+  border-radius: 3rem;
+  margin: 10px 20px;
+  background-image: linear-gradient(to bottom, #5f3fb6, #8d74d3);
+}
+html body.bodyIndex .cajasMenu .caja:hover {
+  background-image: linear-gradient(to bottom, #ca6262, #973535);
+}
+html body.bodyIndex .cajasMenu .caja p {
+  font-size: 3rem;
+  margin: auto;
+  text-align: center;
+  color: #FFFF00;
+  text-transform: capitalize;
 }
 html body header .modoClaroBoton {
   float: left;
@@ -44,36 +83,6 @@ html body header #iconoInicio i {
   font-size: 2em;
   margin-right: 1%;
 }
-html body.Claro {
-  background-image: url(https://images.unsplash.com/photo-1516852294404-5423eaa0d4a9?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687);
-  background-repeat: initial;
-}
-html body.bodyIndex .cajasMenu {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  margin: 20px 0 50px 1rem;
-  gap: 1rem;
-  grid-auto-rows: 200px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-flow: dense;
-}
-html body.bodyIndex .cajasMenu .caja {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  border: #8d74d3 solid 5px;
-  border-radius: 3rem;
-  margin: 10px 20px;
-  background-image: linear-gradient(to bottom, #5f3fb6, #8d74d3);
-}
-html body.bodyIndex .cajasMenu .caja p {
-  font-size: 3rem;
-  margin: auto;
-  text-align: center;
-  color: #FFFF00;
-  text-transform: capitalize;
-}
 html body h1 {
   font-family: blackRaven;
   color: #ba2285;
@@ -91,4 +100,13 @@ html body .galeriaImagenes img {
   border: solid 2px #867e7e;
   border-radius: 10px;
   box-shadow: 0 0 5px 5px rgba(245, 241, 241, 0.2470588235);
+}
+html body footer {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #7b80ad;
+  color: black;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
