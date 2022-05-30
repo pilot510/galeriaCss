@@ -1,0 +1,32 @@
+.cajasMenu {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 20px 0 50px 1rem;
+    gap: 1rem;
+    grid-auto-rows: 200px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-flow: dense;
+
+    .caja {
+        display: flex;
+        width: 200px;
+        height: 200px;
+        border: #8d74d3 solid 5px;
+        border-radius: 3rem;
+        margin: 10px 20px;
+        background-image: linear-gradient(to bottom, #5f3fb6, #8d74d3);
+
+        &:hover {
+            background-image: linear-gradient(to bottom, #ca6262, #973535);
+        }
+
+        p {
+            font-size: 3rem;
+            margin: auto;
+            text-align: center;
+            color: #FFFF00;
+            text-transform: capitalize;
+        }
+    }
+}

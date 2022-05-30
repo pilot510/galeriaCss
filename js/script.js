@@ -1,6 +1,6 @@
 // JAVASCRIPT
 
-let modoLuz = document.querySelector('.modoClaroBoton')
+const modoLuz = document.querySelector('.modoClaroBoton')
 
 modoLuz.onclick = () => {
     document.body.classList.toggle('Claro');
