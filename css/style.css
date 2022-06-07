@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .cajasMenu {
   display: grid;
   justify-items: center;
@@ -28,18 +29,37 @@
   text-transform: capitalize;
 }
 
-.modoClaroBoton {
+header .modoClaroBoton {
   float: left;
   margin: 1rem 2rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  color: #ffffff;
-  background-color: #383838;
+  color: #201f1f;
   border: solid 1px #666565;
   border-radius: 5px;
   text-transform: capitalize;
   font-weight: bold;
   font-size: 1.2rem;
+}
+header .modoClaroBoton::after {
+  content: "Light 🌕";
+}
+
+body.Claro .modoClaroBoton {
+  float: left;
+  margin: 1rem 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: #d6cece;
+  background-color: #5a5656;
+  border: solid 1px #666565;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+body.Claro .modoClaroBoton::after {
+  content: "Dark 🌒";
 }
 
 .galeriaImagenes {
