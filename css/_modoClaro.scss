@@ -10,16 +10,8 @@ header {
         text-transform: capitalize;
         font-weight: bold;
         font-size: 1.2rem;
-    }
 
-    .modoClaroBoton::after {
-        content: "Light 🌕";
-    }
-}
-
-body {
-    &.Claro {
-        .modoClaroBoton {
+        body.Claro & {
             float: left;
             margin: 1rem 2rem;
             padding: .5rem 1rem;
@@ -32,8 +24,12 @@ body {
             font-weight: bold;
             font-size: 1.2rem;
         }
+    }
 
-        .modoClaroBoton::after {
+    .modoClaroBoton::after {
+        content: "Light 🌕";
+
+        body.Claro & {
             content: "Dark 🌒";
         }
     }
