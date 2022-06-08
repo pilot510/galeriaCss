@@ -9,11 +9,11 @@ modoLuz.onclick = () => {
     } else {
         localStorage.setItem('modoClaro', 'false')
     };
-}
+};
 
 
 if (localStorage.getItem('modoClaro') === 'true') {
     document.body.classList.add('Claro')
 } else {
     document.body.classList.remove('Claro')
-}
+};
