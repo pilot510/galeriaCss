@@ -20,8 +20,17 @@ if (localStorage.getItem('modoClaro') === 'true') {
 
 
 
-// do {
-//     hola1 = parseInt(prompt(`Ingrese la contraseña:`))
-// } while (hola1 !== 8487){
-//     alert(`Contraseña correcta!`)
-// }
+function contraseña() {
+    do {
+        hola1 = parseInt(prompt(`Ingrese la contraseña`)
+        )
+    } while (hola1 !== 8689) {
+        sessionStorage.setItem('contraseña', 'correcta')
+    }
+}
+
+window.onload =  () => {
+    if (sessionStorage.getItem('contraseña') !== 'correcta') {
+        contraseña()
+    }
+}
