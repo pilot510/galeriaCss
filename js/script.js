@@ -17,3 +17,11 @@ if (localStorage.getItem('modoClaro') === 'true') {
 } else {
     document.body.classList.remove('Claro')
 };
+
+
+
+do {
+    hola1 = parseInt(prompt(`Ingrese la contraseña:`))
+} while (hola1 !== 8487){
+    alert(`Contraseña correcta!`)
+}
