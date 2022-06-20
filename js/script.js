@@ -20,8 +20,8 @@ if (localStorage.getItem('modoClaro') === 'true') {
 
 
 
-do {
-    hola1 = parseInt(prompt(`Ingrese la contraseña:`))
-} while (hola1 !== 8487){
-    alert(`Contraseña correcta!`)
-}
+// do {
+//     hola1 = parseInt(prompt(`Ingrese la contraseña:`))
+// } while (hola1 !== 8487){
+//     alert(`Contraseña correcta!`)
+// }
