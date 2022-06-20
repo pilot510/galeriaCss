@@ -25,6 +25,7 @@ function contraseña() {
         hola1 = parseInt(prompt(`Ingrese la contraseña`)
         )
     } while (hola1 !== 8689) {
+        alert(`Contraseña correcta`)
         sessionStorage.setItem('contraseña', 'correcta')
     }
 }
