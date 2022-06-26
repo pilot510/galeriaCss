@@ -1,6 +1,8 @@
 // JAVASCRIPT
 
-const modoLuz = document.querySelector('.modoClaroBoton')
+// -------- modoOscuro ---------- //
+
+const modoLuz = document.querySelector('.modoClaroBoton');
 
 modoLuz.onclick = () => {
     document.body.classList.toggle('Claro');
@@ -8,7 +10,7 @@ modoLuz.onclick = () => {
         localStorage.setItem('modoClaro', 'true')
     } else {
         localStorage.setItem('modoClaro', 'false')
-    };
+    }
 };
 
 
@@ -18,7 +20,7 @@ if (localStorage.getItem('modoClaro') === 'true') {
     document.body.classList.remove('Claro')
 };
 
-
+// ------- contraseña ---------- //
 
 function contraseña() {
     do {
@@ -28,10 +30,10 @@ function contraseña() {
         alert(`Contraseña correcta`)
         sessionStorage.setItem('contraseña', 'correcta')
     }
-}
+};
 
-window.onload =  () => {
+window.onload = () => {
     if (sessionStorage.getItem('contraseña') !== 'correcta') {
         contraseña()
     }
-}
+};
